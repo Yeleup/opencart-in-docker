@@ -1,4 +1,2 @@
 .idea/
 database/data/mysql
-app/public
-!app/public/config.php
