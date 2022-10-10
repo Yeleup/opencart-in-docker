@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm -rf app
+sudo rm -rf app
 
 while IFS= read -r line; do
 
@@ -22,6 +22,6 @@ while IFS= read -r line; do
       touch app/public/config.php app/public/admin/config.php
       rm app/public/config-dist.php app/public/admin/config-dist.php
 
-      chmod -R 777 app
+      chmod -R 777 /app
     fi
 done < ./download.txt
